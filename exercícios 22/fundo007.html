@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de conteudo de bloco, tela vertical inteira.</title>
+    <style>
+        #container {
+            position: relative;
+            /* Normalmente o código pai ja vem como relative.*/
+            height: 95vh;
+            background-color: rgb(241, 15, 15);
+            padding: 15px;
+            /*display: flex; essa propriedade sempre em seu pai em conjunto com 
+            o margin auto vai nos dar o objeto ao cento, mas como o objetivo aqui 
+            é ter mais lugares da tela vamos utilizar outro código; */
+        }
+
+        #conteudo {
+            position: absolute;
+            /* nos permite mecher neste elemento.*/
+            height: 300px;
+            background-color: dodgerblue;
+            width: 300px;
+            /* margin: auto;*/
+
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+
+</html>

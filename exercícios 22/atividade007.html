@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de conteudo de bloco, tela vertical inteira.</title>
+    <style>
+        #container {
+            display: flex;
+            /* Normalmente o código pai ja vem como relative.*/
+            height: 96vh;
+            width: 100%;
+            background-color: rgb(105, 105, 105);
+            align-items: center;
+            justify-content: end;
+            /*display: flex; essa propriedade sempre em seu pai em conjunto com 
+            o margin auto vai nos dar o objeto ao cento, mas como o objetivo aqui 
+            é ter mais lugares da tela vamos utilizar outro código; */
+        }
+
+        #conteudo {
+            /* nos permite mecher neste elemento.*/
+            display: flex;
+            height: 700px;
+            background-color: rgb(232, 235, 239);
+            width: 400px;
+            border-radius: 15px;
+            border: 3px solid black;
+            margin-right: 50px;
+            text-align: start;
+            padding: 15px;
+            align-items: end;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* margin: auto;*/
+        }
+
+
+        img {
+            width: 400px;
+            height: 170px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container">
+        <article id="conteudo">
+            <div>
+                <img src="/exercícios 22/imagens/3d-vector-cartoon-robots-each-260nw-2537431091.jpg" alt="">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni alias autem, veritatis placeat id,
+                    quae
+                    error deleniti maxime ipsa blanditiis iusto? Veniam quia, omnis accusantium rerum temporibus vitae
+                    dicta
+                    adipisci.
+                    Illo ad obcaecati quas, fugiat reprehenderit dicta molestias assumenda eligendi repellendus soluta
+                    praesentium quasi, ipsum necessitatibus nisi ab aliquid consequatur quam quis eius facere natus
+                    provident. Impedit ratione quis odio.
+                    Amet quos officiis alias eligendi tempore excepturi quas architecto, odit quae doloremque suscipit
+                    quaerat, mollitia laudantium. Nulla praesentium laudantium cumque ut esse, temporibus dolore modi
+                    iure
+                    autem ipsam id voluptatem.
+                    Iste nemo officiis labore recusandae architecto vero consequuntur ducimus neque ipsa natus nulla
+                    earum
+                    voluptatibus dicta, blanditiis tempore minima id voluptatem molestiae? Cumque molestias laboriosam
+                    nihil
+                    tempore quidem eius assumenda!
+                    Iure necessitatibus veritatis molestiae velit ut magnam soluta cupiditate itaque quasi possimus
+                    error
+                    inventore natus vero, perferendis, molestias nisi repudiandae magni, quibusdam iste similique.
+                    Quisquam
+                    ipsum aliquam modi iure velit.
+                </p>
+            </div>
+        </article>
+    </section>
+</body>
+
+</html>
