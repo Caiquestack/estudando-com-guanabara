@@ -15,6 +15,14 @@
             border-collapse: collapse;
         }
 
+        caption {
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.811);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2em;
+            color: whitesmoke
+        }
+
         td,
         th {
             border: 1px solid black;
@@ -30,6 +38,10 @@
         td.num {
             text-align: right;
         }
+
+        .povo {
+            width: 50px;
+        }
     </style>
 </head>
 
@@ -37,20 +49,28 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
     ANATOMIA PARA TABELAS GRANDES
-    THEAD
-        tr,td,th
-    TBDDY
-        tr,td,th
-    TFOOT
-        tr,td,th
+    table
+    capition
+        THEAD
+            tr,td,th
+        TBDDY
+            tr,td,th
+        TFOOT
+            tr,td,th
+    table
     -->
     <table><!-- Semanticamente essa ordem facilita a organisação do conteudo,
                 mas não é obrigatório, embora tenha um valor semantico.-->
+        <caption> População das unidades Federativas</caption>
+        <!-- Bem dizer seria um titulo, porem com um valor semantico-->
         <thead><!--cabeça-->
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th><!--scope="col": Tendo seu valor semantico e dizendo que seu 
+                                               conteudo é por coluna, ou seja em baixo da teg.-->
+                <th scope="col" class="povo">População</th>
             </tr>
+            <!--E lembrando que qanto mais é adicionado tr mais linha tera, de cima parea baixo, e mais
+                td mais coluna tera embora você meche na linha -->
         </thead><!--cabeça-->
         <tbody><!--corpo-->
             <tr>
@@ -123,12 +143,63 @@
         </tbody><!--corpo-->
         <tfoot><!--rodapé-->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th><!--scope="row": Tendo seu valor semantico, dizendo 
+                                                            que seu conteudo seria por linha, ou seja na sua 
+                                                            frente.-->
                 <td class="num">248 547 855</td>
             </tr>
         </tfoot><!--rodapé-->
     </table>
     <h3>As informações não estão corretas, é apenas para colocar conteudo!</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Numeros de idoso</th>
+                <th scope="col">numeros de jovens</th>
+                <th scope="col">População total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="num">São Paulo</th>
+                <td class="num">457</td>
+                <td class="num">6745</td>
+                <td class="num">457255</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</th>
+                <td class="num">457</td>
+                <td class="num">6745</td>
+                <td class="num">457255</td>
+            </tr>
+            <tr>
+                <td>Mato grosso</th>
+                <td class="num">457</td>
+                <td class="num">6745</td>
+                <td class="num">457255</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</th>
+                <td class="num">457</td>
+                <td class="num">6745</td>
+                <td class="num">457255</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td scope="row">Rodapé sem conteudo</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+                <td>Lorem</td>
+        </tfoot>
+    </table>
+    <p>
+        Assim como a tabela anterior temos nosso conteudo, porem esta ultima tabela contem mais coluna,
+        mostrando a lógica do tr, td e tabem o th que é para tuitulos, em caso de duvida a ser comparado
+        para melhór entendimento.
+    </p>
 </body>
 
 </html>
