@@ -13,6 +13,7 @@
         table {
             width: 600px;
             border-collapse: collapse;
+            position: relative;
         }
 
         caption {
@@ -33,6 +34,27 @@
         tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead>tr>th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        /* tbody>tr:nth-child(2n) {
+            background-color: grey;
+        }
+        simples e rapido 
+       */
+        tbody>tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        /* Essa é uma forma mais complexa, porem pode ser usada
+           quando o fundo atrapalha para o entedimento do conteudo*/
+        tbody>tr:nth-child(even) {
+            background-color: rgb(178, 178, 178);
         }
 
         td.num {
@@ -199,6 +221,45 @@
         Assim como a tabela anterior temos nosso conteudo, porem esta ultima tabela contem mais coluna,
         mostrando a lógica do tr, td e tabem o th que é para tuitulos, em caso de duvida a ser comparado
         para melhór entendimento.
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, harum consectetur, quo magni ipsa iure, quasi
+        nostrum molestias quia quas cupiditate eum ab autem at aliquid saepe esse dignissimos. Ipsam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex atque amet repellat illum, excepturi molestiae
+        libero iure dolores dolorum maiores ullam aliquam rerum necessitatibus temporibus quod, quaerat hic nihil modi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos rerum alias sequi. Error,
+        odio! Commodi natus autem minus vitae, fugiat laudantium provident voluptate id beatae numquam. Tempora, porro
+        blanditiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eaque deserunt hic itaque sed doloribus esse
+        recusandae dignissimos veniam placeat. Magnam, accusamus qui. Ipsam deleniti mollitia, laudantium nemo
+        consequuntur ratione.
+
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, harum consectetur, quo magni ipsa iure, quasi
+        nostrum molestias quia quas cupiditate eum ab autem at aliquid saepe esse dignissimos. Ipsam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex atque amet repellat illum, excepturi molestiae
+        libero iure dolores dolorum maiores ullam aliquam rerum necessitatibus temporibus quod, quaerat hic nihil modi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos rerum alias sequi. Error,
+        odio! Commodi natus autem minus vitae, fugiat laudantium provident voluptate id beatae numquam. Tempora, porro
+        blanditiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eaque deserunt hic itaque sed doloribus esse
+        recusandae dignissimos veniam placeat. Magnam, accusamus qui. Ipsam deleniti mollitia, laudantium nemo
+        consequuntur ratione.
+
+    </p>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, harum consectetur, quo magni ipsa iure, quasi
+        nostrum molestias quia quas cupiditate eum ab autem at aliquid saepe esse dignissimos. Ipsam!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex atque amet repellat illum, excepturi molestiae
+        libero iure dolores dolorum maiores ullam aliquam rerum necessitatibus temporibus quod, quaerat hic nihil modi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus dignissimos rerum alias sequi. Error,
+        odio! Commodi natus autem minus vitae, fugiat laudantium provident voluptate id beatae numquam. Tempora, porro
+        blanditiis?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eaque deserunt hic itaque sed doloribus esse
+        recusandae dignissimos veniam placeat. Magnam, accusamus qui. Ipsam deleniti mollitia, laudantium nemo
+        consequuntur ratione.
+
     </p>
 </body>
 
